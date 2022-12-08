@@ -1,7 +1,7 @@
 package com.ryan.springmybatis.domain.common;
 
 public interface BaseDomain<T> {
-    T value();
+    T values();
     String asText();
     boolean isEmpty();
     boolean hasValue();

@@ -15,13 +15,13 @@ public class Description implements BaseDomain<String> {
     }
 
     @Override
-    public String value() {
-        return Objects.isNull(value) ? DEFAULT_DESCRIPTION : value;
+    public String values() {
+        return isEmpty() ? DEFAULT_DESCRIPTION : value;
     }
 
     @Override
     public String asText() {
-        return value;
+        return values();
     }
 
     public boolean isEmpty() {
